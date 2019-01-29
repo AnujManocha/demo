@@ -17,12 +17,11 @@ public class UserController {
 
 	@Autowired
 	HibernateConfig hibernateconfig;
-	SessionFactory factory = hibernateconfig.getSessionFactory();
+	SessionFactory factory = HibernateConfig.getSessionFactory();
 
-	@GetMapping(value = "/test")
+	@GetMapping(value = "/user")
 	public ResponseEntity<Object> getUser() {
 		System.out.println("Welcome callled ");
-
 		System.out.println(factory != null);
 		Session session = factory.openSession();
 		session.beginTransaction();
