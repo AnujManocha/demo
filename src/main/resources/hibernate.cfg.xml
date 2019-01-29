@@ -20,7 +20,9 @@
 <!-- 		<property name="cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property> -->
 
 
-		<mapping class="test.DbUser" />
+<!-- 		<mapping class="test.DbUser" /> -->
+        <mapping class="com.test.model.User" /> 
+		<mapping package="com.test.model" />
 <!-- 		<mapping class="hibernate.inhertance.model.Contract_Employee" /> -->
 <!-- 		<mapping class="hibernate.inhertance.model.RegularEmployee" /> -->
 <!-- 		<mapping resource="named-query.xml" /> -->
